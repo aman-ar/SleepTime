@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SleepTime</string>
+    <string name="still">Still</string>
+    <string name="not_connected">Google API Not Connected</string>
+    <string name="detailsActivityLabel">Sleep Data</string>
+</resources>

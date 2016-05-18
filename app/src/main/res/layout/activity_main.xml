@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.amanarora.activityrecognitionsimple.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startButton"
+        android:text="Start"
+        android:onClick="buttonClicked"
+        android:layout_marginBottom="72dp"
+        android:layout_above="@+id/timerTextView"
+        android:layout_alignLeft="@+id/timerTextView"
+        android:layout_alignStart="@+id/timerTextView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityTextView"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:hint="Activity"
+        android:layout_above="@+id/startButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="65dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/timerTextView"
+        android:hint="00:00:00"
+        android:textSize="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showButton"
+        android:text="Details"
+        android:onClick="showClicked"
+        android:enabled="false"
+        android:layout_marginBottom="72dp"
+        android:layout_above="@+id/timerTextView"
+        android:layout_alignRight="@+id/timerTextView"/>
+
+</RelativeLayout>
